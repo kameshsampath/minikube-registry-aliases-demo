@@ -1,0 +1,12 @@
+{
+  "name": "minikube-registry-aliases-demo",
+  "version": "1.0.0",
+  "description": "A demo app to show working of minikube registry aliases addon ",
+  "private": true,
+  "repository": "https://github.com/kameshsampath/minikube-registry-aliases-demo",
+  "author": "kamesh.sampath@hotmail.com",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

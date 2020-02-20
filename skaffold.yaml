@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+metadata:
+  name: minikube-registry-aliases-demo
+build:
+  artifacts:
+  - image: example.org/demo/helloworld
+deploy:
+  kubectl:
+    manifests:
+    - k8s/app.yaml

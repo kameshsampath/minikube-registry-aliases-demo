@@ -6,8 +6,8 @@ spec:
   selector:
     app: helloworld
   ports:
-  - port: 80
-    targetPort: 80
+  - port: 8080
+    targetPort: 8080
   type: NodePort
 ---
 apiVersion: apps/v1
@@ -25,11 +25,11 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: example.com/demo/skupper-helloworld
+        image: example.org/demo/helloworld
         imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "50Mi"
             cpu: "250m"
         ports:
-        - containerPort: 80
+        - containerPort: 8080

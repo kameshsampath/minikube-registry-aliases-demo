@@ -8,5 +8,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "node index.js"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1"
   }
 }
